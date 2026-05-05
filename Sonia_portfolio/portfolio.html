@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Sonia-Ethel</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+            <a href="index.html">MonPortfolio</a>
+            </div>
+            <ul class="nav-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="about.html">À propos</a></li>
+              <li><a href="portfolio.html" class="active">Portfolio</a></li>
+              <button id="theme-toggle" class="theme-btn">🌙</button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="projects">
+  <div class="section-header">
+    <span class="section-label">Mes réalisations</span>
+    <h2 class="section-title">Portfolio</h2>
+  </div>
+
+  <div class="cards-grid">
+
+    <div class="card">
+      <div class="card-img">🐍</div>
+      <div class="card-body">
+        <span class="card-tag">Python</span>
+        <h3 class="card-title">Jeu interactif</h3>
+        <p class="card-desc">Application de jeu complète en Python avec logique algorithmique et programmation orientée objet.</p>
+        <button class="btn-card">En savoir plus</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">📚</div>
+      <div class="card-body">
+        <span class="card-tag">Web + SQL</span>
+        <h3 class="card-title">Gestion de bibliothèque</h3>
+        <p class="card-desc">Application web complète avec base de données, modélisation UML et requêtes SQL.</p>
+        <button class="btn-card">En savoir plus</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">💚</div>
+      <div class="card-body">
+        <span class="card-tag">Vue.js</span>
+        <h3 class="card-title">App Vue.js</h3>
+        <p class="card-desc">Application frontend moderne avec TypeScript, CRUD complet et tests unitaires Vitest.</p>
+        <button class="btn-card">En savoir plus</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">⚛️</div>
+      <div class="card-body">
+        <span class="card-tag">React</span>
+        <h3 class="card-title">App React</h3>
+        <p class="card-desc">Application React avec TypeScript, hooks, React Router et gestion d'état.</p>
+        <button class="btn-card">En savoir plus</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🅰️</div>
+      <div class="card-body">
+        <span class="card-tag">Angular</span>
+        <h3 class="card-title">App Angular</h3>
+        <p class="card-desc">Application Angular avec composants, routing, services et architecture modulaire.</p>
+        <button class="btn-card">En savoir plus</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🐳</div>
+      <div class="card-body">
+        <span class="card-tag">Docker</span>
+        <h3 class="card-title">Conteneurisation</h3>
+        <p class="card-desc">Gestion de conteneurs Docker, création de Dockerfiles et déploiement d'applications.</p>
+        <button class="btn-card">En savoir plus</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="section-header">
+    <span class="section-label">Me contacter</span>
+    <h2 class="section-title">Travaillons ensemble</h2>
+    <p class="section-desc">Un projet, une question, une opportunité ? Je suis disponible.</p>
+  </div>
+
+  <form class="contact-form" id="contactForm" novalidate>
+
+    <div class="form-group">
+      <label for="name">Nom</label>
+      <input type="text" id="name" placeholder="Votre nom" />
+      <span class="error-msg" id="nameError">Veuillez entrer votre nom.</span>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="votre@email.com" />
+      <span class="error-msg" id="emailError">Veuillez entrer un email valide.</span>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Votre message..."></textarea>
+      <span class="error-msg" id="messageError">Veuillez écrire un message.</span>
+    </div>
+
+    <button type="submit" class="btn">Envoyer le message</button>
+
+    <div class="success-msg" id="successMsg">
+      ✅ Message envoyé ! Je vous répondrai très vite.
+    </div>
+
+  </form>
+</section>
+    </main>
+
+    <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <span class="footer-logo">Sonia-Ethel<span class="footer-dot">.</span></span>
+      <p class="footer-tagline">Étudiante développeuse — ETNA 2026</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="portfolio.html">Portfolio</a>
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/Sonia-Ethel" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/sonia-ethel-montchon" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Sonia-Ethel Montchon — Tous droits réservés</p>
+  </div>
+</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
