@@ -67,6 +67,7 @@ nav {
 
 /* === HERO === */
 .hero {
+  position: relative;
   min-height: calc(100vh - 65px);
   display: flex;
   align-items: center;
@@ -1460,4 +1461,27 @@ button:hover ~ .cursor-outline {
 .projects-carousel .card {
   max-width: 500px;
   margin: 0 auto;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+
+.scroll-arrow {
+  font-size: 2rem;
+  color: #b5935a;
+  opacity: 0.7;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
 }
