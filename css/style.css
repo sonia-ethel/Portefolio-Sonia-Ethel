@@ -453,12 +453,14 @@ body.dark .card-title {
   font-weight: 500;
   transition: all 0.3s ease;
   width: fit-content;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .about-text a:hover {
   background-color: #004182;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.3);
+  box-shadow: 0 6px 16px rgba(10, 102, 194, 0.3);
 }
 }
 
