@@ -444,7 +444,7 @@ body.dark .card-title {
   }
   .about-text div {
   display: flex;
-  gap: 1rem;
+  gap: 5rem;
   margin-top: 0.5rem;
 }
 
