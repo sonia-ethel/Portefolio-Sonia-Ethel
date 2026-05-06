@@ -1436,3 +1436,19 @@ button:hover ~ .cursor-outline {
   transform: translate(-50%, -50%) scale(2) !important;
   background-color: rgba(181, 147, 90, 0.1) !important;
 }
+
+/* === PROJECTS CAROUSEL === */
+.projects-carousel {
+  padding: 5rem 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.projects-carousel .carousel-slide {
+  padding: 1rem;
+}
+
+.projects-carousel .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
