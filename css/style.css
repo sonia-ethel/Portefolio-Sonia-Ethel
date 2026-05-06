@@ -423,6 +423,7 @@ body.dark .card-title {
 }
 
 /* Responsive */
+/* Responsive */
 @media (max-width: 768px) {
   .about-hero {
     flex-direction: column;
@@ -442,39 +443,14 @@ body.dark .card-title {
   .about-bio {
     margin: 0 auto;
   }
+
   .about-text div {
-  display: flex;
-  gap: 15rem;
-  margin-top: 0.5rem;
-}
-
-.about-text div a:first-child {
-  background-color: #333;
-}
-
-.about-text div a:first-child:hover {
-  background-color: #1a1a1a;
-}
-  .about-text a {
-  display: inline-block;
-  background-color: #0a66c2;
-  color: white;
-  padding: 10px 24px;
-  border-radius: 40px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  width: fit-content;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.about-text a:hover {
-  background-color: #004182;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(10, 102, 194, 0.3);
-}
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
 }
 
 /* === SKILLS === */
