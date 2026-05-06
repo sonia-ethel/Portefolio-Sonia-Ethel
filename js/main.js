@@ -31,19 +31,14 @@ if (form) {
   }
 
   form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
     const isNameValid = validateField(nameInput, 'nameError', nameInput.value.trim() !== '');
     const isEmailValid = validateField(emailInput, 'emailError', /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value));
     const isMessageValid = validateField(messageInput, 'messageError', messageInput.value.trim() !== '');
 
-    if (isNameValid && isEmailValid && isMessageValid) {
-      document.getElementById('successMsg').classList.add('visible');
-      form.reset();
-      setTimeout(() => {
-        document.getElementById('successMsg').classList.remove('visible');
-      }, 4000);
+    if (!isNameValid || !isEmailValid || !isMessageValid) {
+      e.preventDefault(); // bloque seulement si erreur
     }
+    // sinon, laisse le formulaire s'envoyer normalement vers Formspree
   });
 }
 
