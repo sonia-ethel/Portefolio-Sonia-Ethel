@@ -442,6 +442,19 @@ body.dark .card-title {
   .about-bio {
     margin: 0 auto;
   }
+  .about-text div {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.about-text div a:first-child {
+  background-color: #333;
+}
+
+.about-text div a:first-child:hover {
+  background-color: #1a1a1a;
+}
   .about-text a {
   display: inline-block;
   background-color: #0a66c2;
