@@ -9,6 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-outline" id="cursorOutline"></div>
     <header>
         <nav>
             <div class="nav-logo">
@@ -20,8 +22,19 @@
               <li><a href="portfolio.html" class="active">Portfolio</a></li>
               <button id="theme-toggle" class="theme-btn">🌙</button>
             </ul>
+            <button class="burger-btn" id="burgerBtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
         </nav>
     </header>
+    <!-- MENU MOBILE -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Accueil</a>
+  <a href="about.html">À propos</a>
+  <a href="portfolio.html" class="active">Portfolio</a>
+</div>
     <main>
         <section class="projects">
   <div class="section-header">
@@ -29,71 +42,152 @@
     <h2 class="section-title">Portfolio</h2>
   </div>
 
-  <div class="cards-grid">
+ <div class="cards-grid">
 
-    <div class="card">
-      <div class="card-img">🐍</div>
-      <div class="card-body">
-        <span class="card-tag">Python</span>
-        <h3 class="card-title">Jeu interactif</h3>
-        <p class="card-desc">Application de jeu complète en Python avec logique algorithmique et programmation orientée objet.</p>
-        <button class="btn-card">En savoir plus</button>
+  <div class="card reveal reveal-delay-1" style="--card-color: #3b82f6">
+    <div class="card-img">
+<img id="img-python" src="" alt="Python" loading="lazy"/>
+      <div class="card-overlay">
+      <a href="https://github.com/sonia-ethel/Projets-ETNA" target="_blank" class="btn-card-overlay">Voir sur GitHub →</a>
+      </div>
+    </div>
+    <span class="card-badge" style="--badge-color: #3b82f6">Python</span>
+    <div class="card-body">
+      <h3 class="card-title">Jeu interactif</h3>
+      <p class="card-desc">Application de jeu complète en Python avec logique algorithmique et POO.</p>
+    </div>
+    <div class="card-line" style="--line-color: #3b82f6"></div>
+  </div>
+
+  <div class="card reveal reveal-delay-2" style="--card-color: #8b5cf6">
+    <div class="card-img">
+      <img id="img-biblio" src="" alt="Bibliothèque" loading="lazy"/>
+      <div class="card-overlay">
+        <a href="https://github.com/sonia-ethel/Projets-ETNA" target="_blank" class="btn-card-overlay">Voir sur GitHub →</a>
+      </div>
+    </div>
+    <span class="card-badge" style="--badge-color: #8b5cf6">Web + SQL</span>
+    <div class="card-body">
+      <h3 class="card-title">Gestion de bibliothèque</h3>
+      <p class="card-desc">Application web complète avec base de données, modélisation UML et SQL.</p>
+    </div>
+    <div class="card-line" style="--line-color: #8b5cf6"></div>
+  </div>
+
+  <div class="card reveal reveal-delay-3" style="--card-color: #10b981">
+    <div class="card-img">
+<img id="img-vue" src="" alt="Vue.js" loading="lazy"/>
+      <div class="card-overlay">
+        <a href="https://github.com/sonia-ethel/Projets-ETNA/tree/main/Semaine-1-Jour-5-Soutenance" target="_blank" class="btn-card-overlay">Voir sur GitHub →</a>
+      </div>
+    </div>
+    <span class="card-badge" style="--badge-color: #10b981">Vue.js</span>
+    <div class="card-body">
+      <h3 class="card-title">App Vue.js</h3>
+      <p class="card-desc">Application frontend moderne avec TypeScript, CRUD complet et Vitest.</p>
+    </div>
+    <div class="card-line" style="--line-color: #10b981"></div>
+  </div>
+
+  <div class="card reveal reveal-delay-1" style="--card-color: #06b6d4">
+    <div class="card-img">
+<img id="img-react" src="" alt="React" loading="lazy"/>
+      <div class="card-overlay">
+        <a href="https://github.com/sonia-ethel/Projets-ETNA/tree/main/Semaine-2-Jour-3-Soutenance" target="_blank" class="btn-card-overlay">Voir sur GitHub →</a>
+      </div>
+    </div>
+    <span class="card-badge" style="--badge-color: #06b6d4">React</span>
+    <div class="card-body">
+      <h3 class="card-title">App React</h3>
+      <p class="card-desc">Application React avec TypeScript, hooks et React Router.</p>
+    </div>
+    <div class="card-line" style="--line-color: #06b6d4"></div>
+  </div>
+
+  <div class="card reveal reveal-delay-2" style="--card-color: #ef4444">
+    <div class="card-img">
+<img id="img-angular" src="" alt="Angular" loading="lazy"/>
+      <div class="card-overlay">
+        <a href="https://github.com/sonia-ethel/Projets-ETNA/tree/main/Semaine-3-Jour-3-Soutenance" target="_blank" class="btn-card-overlay">Voir sur GitHub →</a>
+      </div>
+    </div>
+    <span class="card-badge" style="--badge-color: #ef4444">Angular</span>
+    <div class="card-body">
+      <h3 class="card-title">App Angular</h3>
+      <p class="card-desc">Application Angular avec composants, routing et architecture modulaire.</p>
+    </div>
+    <div class="card-line" style="--line-color: #ef4444"></div>
+  </div>
+
+  <div class="card reveal reveal-delay-3" style="--card-color: #0ea5e9">
+    <div class="card-img">
+      <img id="img-docker" src="" alt="Docker" loading="lazy"/>
+      <div class="card-overlay">
+        <a href="https://github.com/sonia-ethel/Projets-ETNA/tree/main/Semaine-5-Jour-3-Soutenance" target="_blank" class="btn-card-overlay">Voir sur GitHub →</a>
+      </div>
+    </div>
+    <span class="card-badge" style="--badge-color: #0ea5e9">Docker</span>
+    <div class="card-body">
+      <h3 class="card-title">Conteneurisation</h3>
+      <p class="card-desc">Gestion de conteneurs Docker, Dockerfiles et déploiement d'applications.</p>
+    </div>
+    <div class="card-line" style="--line-color: #0ea5e9"></div>
+  </div>
+
+</div>
+</section>
+
+
+<!-- CARROUSEL -->
+<section class="carousel-section reveal">
+  <div class="section-header">
+    <span class="section-label">En images</span>
+    <h2 class="section-title">Aperçu des projets</h2>
+  </div>
+
+  <div class="carousel">
+    <div class="carousel-track">
+      <div class="carousel-slide">
+        <div class="slide-emoji">🐍</div>
+        <h3>Jeu Python</h3>
+        <p>Logique orientée objet & algorithmique</p>
+      </div>
+      <div class="carousel-slide">
+        <div class="slide-emoji">📊</div>
+        <h3>Data & Automatisation</h3>
+        <p>BigQuery, Looker Studio, Google Sheets</p>
+      </div>
+      <div class="carousel-slide">
+        <div class="slide-emoji">💚</div>
+        <h3>Vue.js</h3>
+        <p>CRUD complet, TypeScript & Vitest</p>
+      </div>
+      <div class="carousel-slide">
+        <div class="slide-emoji">⚛️</div>
+        <h3>React</h3>
+        <p>Hooks, React Router & TypeScript</p>
+      </div>
+      <div class="carousel-slide">
+        <div class="slide-emoji">🅰️</div>
+        <h3>Angular</h3>
+        <p>Composants, services & architecture modulaire</p>
+      </div>
+      <div class="carousel-slide">
+        <div class="slide-emoji">🐳</div>
+        <h3>Docker</h3>
+        <p>Conteneurs, Dockerfiles & déploiement</p>
       </div>
     </div>
 
-    <div class="card">
-      <div class="card-img">📚</div>
-      <div class="card-body">
-        <span class="card-tag">Web + SQL</span>
-        <h3 class="card-title">Gestion de bibliothèque</h3>
-        <p class="card-desc">Application web complète avec base de données, modélisation UML et requêtes SQL.</p>
-        <button class="btn-card">En savoir plus</button>
-      </div>
+    <div class="carousel-controls">
+      <button class="carousel-btn" id="prev">&#8592;</button>
+      <div class="carousel-dots" id="dots"></div>
+      <button class="carousel-btn" id="next">&#8594;</button>
     </div>
-
-    <div class="card">
-      <div class="card-img">💚</div>
-      <div class="card-body">
-        <span class="card-tag">Vue.js</span>
-        <h3 class="card-title">App Vue.js</h3>
-        <p class="card-desc">Application frontend moderne avec TypeScript, CRUD complet et tests unitaires Vitest.</p>
-        <button class="btn-card">En savoir plus</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-img">⚛️</div>
-      <div class="card-body">
-        <span class="card-tag">React</span>
-        <h3 class="card-title">App React</h3>
-        <p class="card-desc">Application React avec TypeScript, hooks, React Router et gestion d'état.</p>
-        <button class="btn-card">En savoir plus</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-img">🅰️</div>
-      <div class="card-body">
-        <span class="card-tag">Angular</span>
-        <h3 class="card-title">App Angular</h3>
-        <p class="card-desc">Application Angular avec composants, routing, services et architecture modulaire.</p>
-        <button class="btn-card">En savoir plus</button>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-img">🐳</div>
-      <div class="card-body">
-        <span class="card-tag">Docker</span>
-        <h3 class="card-title">Conteneurisation</h3>
-        <p class="card-desc">Gestion de conteneurs Docker, création de Dockerfiles et déploiement d'applications.</p>
-        <button class="btn-card">En savoir plus</button>
-      </div>
-    </div>
-
   </div>
 </section>
-<section class="contact" id="contact">
+
+<section class="contact reveal" id="contact">
   <div class="section-header">
     <span class="section-label">Me contacter</span>
     <h2 class="section-title">Travaillons ensemble</h2>

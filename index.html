@@ -9,6 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- CURSEUR PERSONNALISÉ -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-outline" id="cursorOutline"></div>
     <header>
   <nav>
     <div class="nav-logo">
@@ -20,23 +23,65 @@
       <li><a href="portfolio.html">Portfolio</a></li>
       <button id="theme-toggle" class="theme-btn">🌙</button>
     </ul>
+    <button class="burger-btn" id="burgerBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
 </header>
-
+<!-- MENU MOBILE -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" class="active">Accueil</a>
+  <a href="about.html">À propos</a>
+  <a href="portfolio.html">Portfolio</a>
+</div>
 <main>
   <section class="hero">
     <div class="hero-content">
       <p class="hero-subtitle">Bonjour, je suis</p>
-      <h1 class="hero-title">Sonia<em>-</em>Ethel<em>.</em></h1>
+        <h1 class="hero-title"><span id="morphText">Sonia-Ethel</span><em>.</em></h1>
       <p class="hero-description">
         Étudiante développeuse web passionnée par la création d'interfaces modernes.
       </p>
       <a href="portfolio.html" class="btn">Voir mes projets</a>
     </div>
   </section>
+<!-- COMPTEURS -->
+<section class="counters">
+  <div class="counters-grid">
+    <div class="counter-item">
+      <span class="counter-number" data-target="9">0</span>
+      <span class="counter-label">Projets réalisés</span>
+    </div>
+    <div class="counter-item">
+      <span class="counter-number" data-target="5">0</span>
+      <span class="counter-label">Technologies maîtrisées</span>
+    </div>
+    <div class="counter-item">
+      <span class="counter-number" data-target="3">0</span>
+      <span class="counter-label">Pays visités</span>
+    </div>
+    <div class="counter-item">
+      <span class="counter-number" data-target="4">0</span>
+      <span class="counter-label">Langues parlées</span>
+    </div>
+  </div>
+</section>
+
+  <!-- CITATION -->
+<section class="quote-section reveal">
+  <div class="quote-container">
+    <div class="quote-mark">"</div>
+    <p class="quote-text" id="quoteText">Chargement...</p>
+    <p class="quote-author" id="quoteAuthor"></p>
+    <button class="quote-refresh" id="quoteRefresh">↻ Nouvelle citation</button>
+  </div>
+</section>
+
   <!-- APERÇU À PROPOS -->
-<section class="preview-section">
-  <div class="preview-card">
+<section class="preview-section reveal">
+  <div class="preview-card reveal">
     <div class="preview-text">
       <span class="section-label">À propos</span>
       <h2 class="preview-title">Qui suis-<em>je</em> ?</h2>

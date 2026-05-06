@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-outline" id="cursorOutline"></div>
     <header>
   <nav>
     <div class="nav-logo">
@@ -20,16 +22,27 @@
         <li><a href="portfolio.html">Portfolio</a></li>
         <button id="theme-toggle" class="theme-btn">🌙</button>
     </ul>
+    <button class="burger-btn" id="burgerBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
 </header>
+<!-- MENU MOBILE -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Accueil</a>
+  <a href="about.html" class="active">À propos</a>
+  <a href="portfolio.html">Portfolio</a>
+</div>
 <main>
 
   <!-- BIO -->
   <section class="about-hero">
-    <div class="about-img">
+    <div class="about-img reveal-right">
       <img src="assets/photo.jpg" alt="Sonia-Ethel Montchon" />
     </div>
-    <div class="about-text">
+    <div class="about-text reveal-left">
       <span class="section-label">À propos</span>
       <h1 class="about-title">Sonia-Ethel <em>Montchon</em></h1>
       <p class="about-role">Étudiante en Bachelor Informatique — ETNA</p>
@@ -50,7 +63,7 @@
 
   <div class="skills-grid">
 
-    <div class="skills-group">
+    <div class="skills-group reveal reveal-delay-1">
       <h3 class="skills-group-title">Développement</h3>
 
       <div class="skill-item">
@@ -171,7 +184,7 @@
   <div class="timelines-wrapper">
 
     <!-- FORMATION -->
-    <div class="timeline-col">
+    <div class="timeline-col reveal reveal-delay-2">
       <h3 class="timeline-col-title">🎓 Formations</h3>
       <div class="timeline">
 
@@ -195,7 +208,7 @@
     </div>
 
     <!-- EXPÉRIENCE -->
-    <div class="timeline-col">
+    <div class="timeline-col reveal reveal-delay-2">
       <h3 class="timeline-col-title">💼 Expériences</h3>
       <div class="timeline">
 
@@ -230,43 +243,43 @@
 
   <div class="interests-grid">
 
-    <div class="interest-card">
+    <div class="interest-card reveal reveal-delay-1">
       <div class="interest-icon">🎙️</div>
       <h3>Communication & Sonorisation</h3>
       <p>Animation, prise de parole et gestion du son lors d'événements Gospel et culturels.</p>
     </div>
 
-    <div class="interest-card">
+    <div class="interest-card reveal reveal-delay-1">
       <div class="interest-icon">🎸</div>
       <h3>Guitare</h3>
       <p>En apprentissage, la musique est pour moi un espace de créativité et de liberté.</p>
     </div>
 
-    <div class="interest-card">
+    <div class="interest-card reveal reveal-delay-1">
       <div class="interest-icon">🎨</div>
       <h3>Design graphique</h3>
       <p>Création visuelle, identité de marque et mise en page — l'esthétique au service du message.</p>
     </div>
 
-    <div class="interest-card">
+    <div class="interest-card reveal reveal-delay-1">
       <div class="interest-icon">📷</div>
       <h3>Photographie</h3>
       <p>Capturer des instants, jouer avec la lumière et raconter des histoires en images.</p>
     </div>
 
-    <div class="interest-card">
+    <div class="interest-card reveal reveal-delay-1">
       <div class="interest-icon">🧶</div>
       <h3>Tricot & Crochet</h3>
       <p>La patience et la précision du tricot comme métaphore du code — chaque maille compte.</p>
     </div>
 
-    <div class="interest-card">
+    <div class="interest-card reveal reveal-delay-1">
       <div class="interest-icon">🖌️</div>
       <h3>Peinture</h3>
       <p>Expression artistique libre, mélange de couleurs et d'émotions sur toile.</p>
     </div>
 
-    <div class="interest-card">
+    <div class="interest-card reveal reveal-delay-1">
       <div class="interest-icon">✈️</div>
       <h3>Voyage</h3>
       <p>Ghana, Bénin, Côte d'Ivoire — explorer d'autres cultures nourrit ma créativité et mon ouverture d'esprit.</p>
