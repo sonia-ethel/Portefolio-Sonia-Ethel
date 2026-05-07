@@ -1485,3 +1485,40 @@ button:hover ~ .cursor-outline {
     transform: translateY(10px);
   }
 }
+
+/* === SCROLL TO TOP === */
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 45px;
+  height: 45px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-top:hover {
+  background-color: #b5935a;
+}
+
+body.dark .scroll-top {
+  background-color: #f0ece4;
+  color: #1a1a1a;
+}
+
+body.dark .scroll-top:hover {
+  background-color: #b5935a;
+  color: #fff;
+}
