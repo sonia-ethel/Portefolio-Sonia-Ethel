@@ -1522,3 +1522,37 @@ body.dark .scroll-top:hover {
   background-color: #b5935a;
   color: #fff;
 }
+
+/* === ABOUT LINKS === */
+.about-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 0.9rem 2.2rem;
+  color: #1a1a1a;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+body.dark .btn-outline {
+  border-color: #f0ece4;
+  color: #f0ece4;
+}
+
+body.dark .btn-outline:hover {
+  background-color: #f0ece4;
+  color: #1a1a1a;
+}
