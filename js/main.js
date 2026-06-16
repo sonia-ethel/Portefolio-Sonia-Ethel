@@ -286,6 +286,10 @@ const projectImages = [
   { id: 'img-react', query: 'web application' },
   { id: 'img-angular', query: 'software architecture' },
   { id: 'img-docker', query: 'server container' },
+    // === NOUVEAUX PROJETS ===
+  { id: 'img-uxui', query: 'design interface' },
+  { id: 'img-p2b', query: 'real estate rental' },
+  { id: 'img-dac', query: 'user friendly interface' },
 ];
 
 const fallbacks = {
@@ -295,6 +299,10 @@ const fallbacks = {
   'img-react': 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400',
   'img-angular': 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=400',
   'img-docker': 'https://images.unsplash.com/photo-1605745341112-85968b19335b?w=400',
+    // === NOUVEAUX FALLBACKS ===
+  'img-uxui': 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400', // design/interface
+  'img-p2b': 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400', // maison/location
+  'img-dac': 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=400', // dashboard/ui
 };
 
 async function loadUnsplashImages() {
